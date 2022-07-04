@@ -1,0 +1,59 @@
+encoding: utf-8
+
+# SEO相关信息
+title: 刘大尉   #标题 ：例如：tile：刘大尉
+description: 刘大尉 #描述
+keywords: Blog,Java,Html,JavaScript #关键词
+author: 刘大尉 #作者
+footerText: '2021 - 2022' #页脚时间
+favcicon: 'https://thirdqq.qlogo.cn/g?b=oidb&k=7JfQDPgsztTjt8KBlzV6Aw&s=100&t=1605528403'  #网站图标
+
+# 这些不要动
+permalink: /posts/:year/:month/:day/:title.html
+kramdown:
+  auto_ids: true
+  input: GFM
+  syntax_highlighter: rouge
+exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock', 'blog.sh']
+
+# 域名配置
+# baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
+domainUrl: 'https://deoncn.github.io'
+baseurl: ''
+
+
+
+#个人信息配置
+#头像
+headerimg: https://thirdqq.qlogo.cn/g?b=oidb&k=7JfQDPgsztTjt8KBlzV6Aw&s=100&t=1605528403
+#github主页地质
+githubmainpage: https://github.com/deoncn
+# 吐个槽地址，会在chat页面中重定向到该地址
+tucaoUrl: https://support.qq.com/products/297659
+
+# 菜单
+menu:
+  - title: 博客
+    url: /
+  - title: 搜索
+    url: /pages/search.html
+  - title: 关于
+    url: /pages/about.html
+
+# 点击页面文字冒出特效,不需要请设置为false
+extClickEffect: false
+
+# Google Adsense,不需要请设置为false
+# _includes/ext-adsense.html 里面修改为自己的配置
+extAdsense: false
+
+# 数学公式支持，比较影响加载速度,不需要请设置为false
+extMath: false
+
+
+# 友情链接
+links:
+  - title: 文科中的技术宅
+    url: https://www.townwang.com
+  - title: Py's Whisper
+    url: https://whisper.pyliubaolin.top/

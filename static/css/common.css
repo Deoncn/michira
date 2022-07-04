@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+/* CSS Document */
+@font-face {
+  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-display: fallback;
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500;700&family=Oswald:wght@300;500;700&display=swap');
+}
+
+html {
+  color: #000000ab;
+  background: #B7BCBC;
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: all 500ms ease;
+  font-family: 'Noto Sans SC', 'Oswald', sans-serif;
+}
+
+body {
+  max-width: 680px;
+  padding: 0 14px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: auto;
+  border: thin solid #0000006c;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+pre,
+code {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #999999;
+}
+
+
+a {
+  text-decoration: none;
+  color: #000000; 
+  margin: 0 10px;
+  border-bottom: medium rgba(148, 0, 211, 0) dotted;
+}
+
+a:hover {
+  position: sticky;
+  border-bottom: medium #58a6ff dotted;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* 页头 */
+.header {
+  padding: 3px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: medium solid #000000; */
+}
+
+.header .logo {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  /* border-radius: 5%; */
+  flex-shrink: 0;
+  display: inline-block;
+  user-select: none;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .menu {
+  margin-right: -9px;
+  text-align: right;
+  user-select: none;
+}
+
+.header .menu a {
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px;
+  white-space: nowrap;
+  user-select: auto;
+}
+
+
+
+
+
+
+/* 页脚 */
+
+.footer {
+  padding: 15px 0;
+
+  /* border: medium solid #000000; */
+}
+
+.footer a {
+  color: #000000c2;
+  padding: 0 4px;
+  white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+/* 快速返回顶层 */
+
+#to-top {
+  position: fixed;
+  z-index: 99;
+  right: 16px;
+  bottom: 12px;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  border-radius: 10%;
+  background-color: #000000;
+  opacity: 0.45;
+  overflow: hidden;
+  transform: translateY(66px);
+  transition: transform 200ms ease-in-out;
+}
+
+#to-top.show {
+  transform: translateY(0);
+}
+
+#to-top>span {
+  display: block;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 13px;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+#to-top>span:first-child {
+  background-color: #ffffff;
+}
+
+#to-top>span:last-child {
+  background-color: #000000;
+  transform: translate(-50%, 16%) rotate(45deg);
+}
+
+
+
+
+@media screen and (max-width: 560px) {
+  .header {
+    padding: 35px 0 20px 0;
+    justify-content: flex-start;
+  }
+
+  .header .menu {
+    margin-right: -2px;
+    text-align: center;
+  }
+
+  .header .menu a {
+    margin: 2px 5px;
+    font-size: 15px;
+  }
+}
